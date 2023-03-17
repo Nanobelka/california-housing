@@ -1,14 +1,28 @@
 ![California_Nanobelka](images/California_Housing.jpg)
 # [Median house value prediction – pySpark pipline](https://github.com/Nanobelka/california-housing/blob/main/california_housing.ipynb)
 
-**Task**  
-Predict risk of cardiovascular diseases from patient lifestyle information.
+**Purpose**  
+Обучить модель линейной регрессии для прогнозирования медианной стоимости жилья в определенном районе.
+Метрики для оценки модели: R2, RMSE, MAE.
 
 **Source data**  
-Lifestyle information from about 70,000 patients including gender, age, weight and so on.
+Данные о жилье в Калифорнии в 1990 году, сгрупированные по районам.
 
-**Result**  
-Model with ROC-AUC=0.8. You can test the model with the app [Cardiovascular disease prediction](https://cardiovascular-disease-prediction.streamlit.app/) powered with [Streamlit](https://streamlit.io/).
-
-**Disclaimer**  
-This application is made for demonstration purposes only. The source of the data used for this application is unknown. Therefore, this application can under no circumstances be used for practical purposes.
+**Tasks**  
+- для решения использовать pySpark, MLlib;
+- разделить данные на обучающую и отложенную выборки: train и test;
+- для числовых признаков применить:
+    - масштабирование;
+    - полиномиальное приеобразование;
+- для категориальных признаков применить:
+    - one hote encoding;
+    - кластеризацию на основе числовых признаков;
+- при подборе гиперпараметров применить метод случайного поиска по сетке;
+- подбор гиперпараметров сделать с помощью кросс-валидации;
+- объединить все шаги в pipeline;
+- создать 2 модели:
+    - используя все доступные признаки;
+    - используя только числовые признаки.
+- оценить метрики созданных моделей:
+    - по результатам кросс-валидации;
+    - на отложенной выборке.
