@@ -1,5 +1,5 @@
 ![California_Nanobelka](images/California_Housing.jpg)
-# [Median house value prediction – pySpark pipline](https://github.com/Nanobelka/california-housing/blob/main/california_housing.ipynb)
+# [Median house value prediction – pySpark pipeline](https://github.com/Nanobelka/california-housing/blob/main/california_housing.ipynb)
 
 **Purpose**
 
