@@ -1,4 +1,4 @@
-# [Cardiovascular disease prediction](https://cardiovascular-disease-prediction.streamlit.app/)
+# [Median house value prediction – pySpark pipline](https://github.com/Nanobelka/california-housing/blob/main/california_housing.ipynb)
 
 **Task**  
 Predict risk of cardiovascular diseases from patient lifestyle information.
