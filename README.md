@@ -28,4 +28,4 @@ Housing data in California in 1990 grouped by borough.
     - using only numerical source features.
 - evaluate the metrics of the created models:
     - for cross-validation;
-    - on tesr samples.
+    - on test samples.
