@@ -1,28 +1,31 @@
 ![California_Nanobelka](images/California_Housing.jpg)
 # [Median house value prediction – pySpark pipline](https://github.com/Nanobelka/california-housing/blob/main/california_housing.ipynb)
 
-**Purpose**  
-Обучить модель линейной регрессии для прогнозирования медианной стоимости жилья в определенном районе.
-Метрики для оценки модели: R2, RMSE, MAE.
+**Purpose**
 
-**Source data**  
-Данные о жилье в Калифорнии в 1990 году, сгрупированные по районам.
+To train a linear regression model to predict the median cost of housing in a particular area.  
+Metrics for model evaluation: R2, RMSE, MAE.
 
-**Tasks**  
-- для решения использовать pySpark, MLlib;
-- разделить данные на обучающую и отложенную выборки: train и test;
-- для числовых признаков применить:
-    - масштабирование;
-    - полиномиальное приеобразование;
-- для категориальных признаков применить:
-    - one hote encoding;
-    - кластеризацию на основе числовых признаков;
-- при подборе гиперпараметров применить метод случайного поиска по сетке;
-- подбор гиперпараметров сделать с помощью кросс-валидации;
-- объединить все шаги в pipeline;
-- создать 2 модели:
-    - используя все доступные признаки;
-    - используя только числовые признаки.
-- оценить метрики созданных моделей:
-    - по результатам кросс-валидации;
-    - на отложенной выборке.
+**Input**
+
+Housing data in California in 1990 grouped by borough.
+
+**Tasks:**
+
+- use pySpark and MLlib for solution;
+- divide the data into train and test samples;
+- for numerical features apply:
+    - scaling;
+    - polynomial expansion;
+- for categorical features apply:
+    - one hot encoding;
+    - clustering based on some numerical features;
+- apply random grid search for tuning of hyperparameters;
+- select best hyperparameters on cross-validation;
+- combine all steps into pipeline;
+- create 2 models:
+    - using all available source features;
+    - using only numerical source features.
+- evaluate the metrics of the created models:
+    - for cross-validation;
+    - on tesr samples.
