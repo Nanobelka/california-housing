@@ -1,5 +1,6 @@
 ![California_Nanobelka](images/California_Housing.jpg)
 # [Median house value prediction – pySpark pipeline](https://nbviewer.jupyter.org/github/Nanobelka/california-housing/blob/main/california_housing.ipynb)
+##### Project for [Yandex.Praktikum](https://github.com/Nanobelka/Yandex_Praktikum)
 
 **Purpose**
 
